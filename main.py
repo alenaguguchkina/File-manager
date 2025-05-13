@@ -54,7 +54,7 @@ def main(stdscr):#ядро программы
             current_row -= 1
         elif key == curses.KEY_DOWN and current_row < len(files) - 1:
             current_row += 1
-        elif key == 27:
+        elif key == 27 or key == ord('q') or key == ord('й'):
             break
         elif key == curses.KEY_MOUSE:
             try:
